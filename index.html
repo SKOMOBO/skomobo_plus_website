@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from skomobo-screen.demo.carlibotes.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 29 May 2018 22:49:52 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta http-equiv="refresh" content="5">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>SKOMOBO</title>
+
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/var.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/canvasjs.min.html"></script>
+    <script src="js/jquery.canvasjs.min.html"></script>
+    <script src="js/temp-graph.html"></script>
+
+    <!--<script src="js/phaser.js"></script>-->
+
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+
+<main>
+
+    <div class="container blue">
+        <!-- Face -->
+        <div id="faceDisplay" class="tired display">
+            <img id="emotionImage" src="images/emotions/blue/1.html" onClick="showDisplayById('mainDisplay');">
+
+            <img id="speechBubble" class="absolute" style="top:15px; left: 15px;" src="images/emotions/blue/bubble1.html">
+
+            <!-- Color changing dots -->
+            <!--<button onClick="changeBgColor('good', 'humid'); setValues(400, 90, 21, 52);" class="dot-button" style="background: darkblue; bottom: 205px;">Humid</button>-->
+            <button onClick="changeBgColor('happy', 'blue'); setValues(489, 30, 20, 50);" class="dot-button" style="background: deepskyblue; bottom: 155px;">Great</button>
+            <button onClick="changeBgColor('good','green'); setValues(700, 50, 25, 32);" class="dot-button" style="background: forestgreen; bottom: 105px;">Good</button>
+            <button onClick="changeBgColor('tired','red'); setValues(1200, 60, 19, 67);" class="dot-button" style="background: darkred; bottom: 55px;">CO2</button>
+            <button onClick="changeBgColor('hot', 'orange'); setValues(600, 43, 35, 58);" class="dot-button" style="background: orangered; bottom: 5px;">Hot</button>
+        </div>
+
+        <!-- Main Display with display buttons-->
+        <div id="mainDisplay" class="display" style="display:none;" >
+            <img src="images/icons/backButton.png" alt="Back Button" class="backButton" onClick="showFace();" />
+
+            <div class="display-button-container">
+                <div class="quarter-width">
+                    <div id="CO2-display-button" class="display-button blue" ">
+                        <img src="images/icons/1.png" class="display-button-icon">
+                    </div>
+                    <p class="display-value"><span id="CO2-value">420</span>ppm</p>
+                    <p class="display-value-message" id="CO2-value-message">Great!</p>
+                </div>
+                <div class="quarter-width">
+                    <div id="humidity-display-button" class="display-button blue" ">
+                        <img src="images/icons/2.png" class="display-button-icon">
+                    </div>
+                    <p class="display-value"><span id="humidity-value">50</span>%</p>
+                    <p class="display-value-message" id="humidity-value-message">Great!</p>
+                </div>
+                <div class="quarter-width">
+                    <div id="temp-display-button" class="display-button blue" ">
+                        <img src="images/icons/3.png" class="display-button-icon">
+                    </div>
+                    <p class="display-value"><span id="temp-value">22</span>&deg;C</p>
+                    <p class="display-value-message" id="temp-value-message">Great!</p>
+                </div>
+                <div class="quarter-width">
+                    <div id="dust-display-button" class="display-button green" ">
+                        <img src="images/icons/4.png" class="display-button-icon">
+                    </div>
+                    <p class="display-value"><span id="dust-value">17.0</span>&micro;g/m&sup3;</p>
+                    <p class="display-value-message" id="dust-value-message">Great!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-------------------------------------------------------
+                        Dashboard Displays
+        -------------------------------------------------------->
+        <!-------------------------------------------------------
+                                Graphs
+        -------------------------------------------------------->
+
+
+    </div><!-- end .container -->
+</main>
+
+</body>
+
+<!-- Mirrored from skomobo-screen.demo.carlibotes.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 29 May 2018 22:50:20 GMT -->
+</html>

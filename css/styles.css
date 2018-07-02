@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i");
+html, body, main {
+  height: 100%;
+  width: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+  cursor: none !important;
+  overflow: hidden;
+  font-family: 'Lato', sans-serif; }
+
+main {
+  width: 800px;
+  height: 480px; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+.absolute {
+  position: absolute; }
+
+.blue-box {
+  background: #283A4B; }
+
+div.container {
+  background: url("../images/bg/green.png") no-repeat center;
+  background-size: cover;
+  height: 100%;
+  width: 100%; }
+  div.container.red {
+    background-image: url("../images/bg/red.png"); }
+  div.container.blue {
+    background-image: url("../images/bg/blue.png"); }
+  div.container.green {
+    background-image: url("../images/bg/green.png"); }
+  div.container.orange {
+    background-image: url("../images/bg/orange.png"); }
+  div.container.humid {
+    background-image: url("../images/bg/humid.png"); }
+
+.display {
+  width: 100%;
+  height: 100%;
+  margin: 0 !important;
+  overflow: hidden; }
+
+img.fullScreen {
+  width: 100%;
+  height: auto; }
+
+#face {
+  width: 800px;
+  height: 480px;
+  margin: 0 !important; }
+
+#emotionImage {
+  width: 100%;
+  height: auto; }
+
+.backButton {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 100px;
+  height: auto; }
+
+#speechBubble {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 210px;
+  height: auto; }
+
+/******************************************************
+DISPLAY
+SCREEN - BUTTONS AND VALUES
+ */
+#mainDisplay {
+  padding: 30px; }
+
+.display-button-container {
+  margin-top: 100px; }
+
+.quarter-width {
+  vertical-align: top;
+  width: 23%;
+  text-align: center;
+  display: inline-block; }
+
+.display-button {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  margin: 0 auto;
+  border: 3px solid #ffffff;
+  box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.5); }
+  .display-button.red {
+    background: #a42e22;
+    /* Old browsers */
+    background: linear-gradient(to right, #FF2A2C 1%, #a42e22 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+  .display-button.blue {
+    background: #00A6FF;
+    /* Old browsers */
+    background: linear-gradient(to right, #55EEE5 1%, #00A6FF 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+  .display-button.orange {
+    background: #f79226;
+    background: linear-gradient(to right, #ffd580 1%, #f79226 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+  .display-button.green {
+    background: #377639;
+    background: linear-gradient(to right, #5CBA47 1%, #377639 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+
+.display-button-icon {
+  height: 110px;
+  width: 110px;
+  position: relative;
+  margin: 18px auto;
+  border: 2px solid #ffffff;
+  border-radius: 100%; }
+
+.display-value {
+  color: #283A4B;
+  font-size: 33px;
+  font-weight: 800;
+  padding: 10px;
+  margin: 5px;
+  margin-top: 15px; }
+  .display-value span.unit {
+    font-size: 22px; }
+
+.dot-button {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  position: absolute;
+  right: 5px;
+  z-index: 999; }
+
+.canvasjs-chart-toolbar,
+.canvasjs-chart-credit {
+  display: none !important; }
+
+.canvasjs-chart-canvas {
+  width: 700px !important;
+  height: 420px  !important; }
+
+/*# sourceMappingURL=styles.css.map */
