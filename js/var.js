@@ -1,5 +1,5 @@
-var bg_color = 'red';
-var emotion = 'tired';
+var bg_color = 'blue';
+var emotion = 'happy';
 var state = 'face';
 //Set starting values
 var humidity = 70.30;
